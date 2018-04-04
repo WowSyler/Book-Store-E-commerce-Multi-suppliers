@@ -29,7 +29,7 @@ http://gobookstore.ozankck.com/admin
 * Proje içindeki "Web.config" dosyasının içinde kendi database bilgilerinizle yapılandırma yapmanız gerek. 
 * Tabi ilk önce "SQL 2014 Database Table settings..." dosyasındaki sql kodlarını databasenizde calıştırmanız gerek.
 * databaseip, userid, pass
-<code> add name="bookStoreDBEntities" connectionString="metadata=res://*/Models.Model1.csdl|res://*/Models.Model1.ssdl|res://*/Models.Model1.msl;
+* <code> add name="bookStoreDBEntities" connectionString="metadata=res://*/Models.Model1.csdl|res://*/Models.Model1.ssdl|res://*/Models.Model1.msl;
        provider=System.Data.SqlClient;provider connection string=&quot;
        data source=databaseip;
        initial catalog=newbookStoreDB;
