@@ -18,11 +18,11 @@ http://gobookstore.ozankck.com/Suppliers/LoginSupp
 http://gobookstore.ozankck.com/admin
 
 ## ekran görüntüleri
-* ![AnaSayfa](https://i.hizliresim.com/W73MAY.png)
-* ![Satıcı panel görüntüsü](https://i.hizliresim.com/Rnz7L1.png)
-* ![Admin panel görüntüsü](https://i.hizliresim.com/z0oPvY.png)
-* ![Tek satıcılı bir kitap](https://i.hizliresim.com/G9M8Q2.png)
-* ![Birden fazla Satıcılı bir kitap](https://i.hizliresim.com/6JWA7P.png)
+* [AnaSayfa](https://i.hizliresim.com/W73MAY.png)
+* [Satıcı panel görüntüsü](https://i.hizliresim.com/Rnz7L1.png)
+* [Admin panel görüntüsü](https://i.hizliresim.com/z0oPvY.png)
+* [Tek satıcılı bir kitap](https://i.hizliresim.com/G9M8Q2.png)
+* [Birden fazla Satıcılı bir kitap](https://i.hizliresim.com/6JWA7P.png)
 
 
 ## Database baglantı
