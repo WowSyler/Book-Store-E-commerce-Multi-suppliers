@@ -1,0 +1,78 @@
+﻿@model BookStore.Models.Customers
+
+@{
+    ViewBag.Title = "Account Detail";
+}
+
+
+<div class="contact-info ">
+    <h2 class="title text-center">Customer Info</h2>
+    <address>
+        <div class="social-networks">
+            <div class="table-responsive">
+                <table class="table  table-bordered ">
+       <tr>
+                        <th class="text-center">@Html.DisplayNameFor(model => model.FirstName)</th>      
+                        <th class="text-center">     @Html.DisplayNameFor(model => model.LastName)       </th>
+                        <th class="text-center">     @Html.DisplayNameFor(model => model.UserName)       </th>
+                        <th class="text-center">     @Html.DisplayNameFor(model => model.Country)        </th>
+                   
+        </tr>
+                  
+         <tr>
+             <td>  @Html.DisplayFor(model => model.LastName)     </td>
+             <td> @Html.DisplayFor(model => model.FirstName)</td>            
+             <td>   @Html.DisplayFor(model => model.UserName)         </td>
+             <td>   @Html.DisplayFor(model => model.Country)          </td>
+         
+              
+         </tr>
+
+                    
+                </table>
+              
+                    <table class="table  table-bordered ">
+                        
+                        <tr>
+                            <th class="text-center">     @Html.DisplayNameFor(model => model.City)           </th>
+                            <th class="text-center">     @Html.DisplayNameFor(model => model.Email)          </th>
+                            <th class="text-center">     @Html.DisplayNameFor(model => model.Phone)          </th>
+                            <th class="text-center">     @Html.DisplayNameFor(model => model.Address)        </th>
+
+                        </tr>
+                        <tr>
+
+                            <td>   @Html.DisplayFor(model => model.City)             </td>
+                            <td>   @Html.DisplayFor(model => model.Email)            </td>
+                            <td>   @Html.DisplayFor(model => model.Phone)            </td>
+                            <td>   @Html.DisplayFor(model => model.Address)          </td>
+                        </tr>
+                </table>
+</div>
+
+
+
+            
+            
+
+        </div>
+    </address></br>
+    <div class="social-networks"></br>
+        <h2 class="title text-center">@Html.ActionLink("Update", "Update", new { id = Model.CustomerID, user = Session["username"] })</h2>
+
+        <p>
+             
+            @Html.ActionLink("Home Page", "Index", "Home")</br></br></br></br></br></br></br></br>
+        </p>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+

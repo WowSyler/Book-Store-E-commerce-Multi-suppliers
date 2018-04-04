@@ -1,0 +1,31 @@
+﻿@model BookStore.Models.Products
+
+<div class="col-sm-3">
+    <div class="product-image-wrapper">
+        <div class="single-products">
+            <div class="productinfo text-center">
+                <a href="@Url.Action("Details","Products", new { id = @Model.ProductID, bname = Model.Name })"> <img src="@Model.Picture1" alt="@Model.Name" /> </a>
+                <h2>@Model.Price <span>₺</span></h2>
+                <h5>@Model.Name</h5>
+                @if (Model.UnitInStock > 0)
+                {
+                  
+                    <a href=" @(Session["username"] != null ? Url.Action("AddToCart", "Products", new { id = @Model.ProductID , qty =1 , user = Session["UserName"]})  : Url.Action("Index", "Accounts")) " class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                }
+                else
+                {
+
+                    <a class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Not Fount Stoks</a>
+
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+@{
+    TempData["returnURL"] = Request.RawUrl;
+}
+
+
+

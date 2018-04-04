@@ -1,0 +1,75 @@
+﻿@model IEnumerable<BookStore.Models.Comments>
+
+@{
+    ViewBag.Title = "ListValidCommets";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<section id="main-content">
+    <section class="wrapper">
+        <div class="row mt">
+
+            <div class="col-lg-12">
+                <h2>List Comment validation</h2>
+                <div class="form-panel">
+                    <table class="table">
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.name)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.text)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Commentdate)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.active)
+                            </th>
+                          
+                            <th></th>
+                        </tr>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.name)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.text)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Commentdate)
+                                </td>
+                                <td>
+                                    @if (item.active == true)
+                                    {
+                                        <span>  Active</span>
+                                    }
+                                    else
+                                    {
+                                        <span> Not Active</span>
+                                    }
+                                </td>
+
+                                <td>
+                                   
+                                    @Html.ActionLink("Active", "ListValidComment", new { id = item.commentID, Ladmin = Session["admin"] } ) |
+                                    @Html.ActionLink("Delete", "DeleteValidCommet", new { id = item.commentID, Ladmin = Session["admin"]  })
+                                </td>
+                            </tr>
+                        }
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</section>
+
+
+@{
+    TempData["commet"] = Request.RawUrl;
+}

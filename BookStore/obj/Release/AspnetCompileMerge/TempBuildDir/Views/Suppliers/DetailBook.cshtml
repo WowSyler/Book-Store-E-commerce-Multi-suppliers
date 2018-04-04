@@ -1,0 +1,132 @@
+﻿@model BookStore.Models.Products
+
+@{
+    ViewBag.Title = "Detail Book";
+    Layout = "~/Views/Shared/_LSupp.cshtml";
+}
+<section id="main-content">
+    <section class="wrapper">
+        <div class="row mt">
+          
+            <div class="col-lg-6">
+                <h2>Detail Book</h2>
+                <div class="form-panel">
+                    <div>
+                        <h4>Products</h4>
+                        <hr />
+                        <dl class="dl-horizontal">
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Name)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.Name)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Authors)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.Authors)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Price)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.Price)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.OldPrice)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.OldPrice)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Discount)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.Discount)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.UnitInStock)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.UnitInStock)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.PubliserName)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.PubliserName)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.ShortDescription)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.ShortDescription)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.LongDescription)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.LongDescription)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Picture1)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.Picture1)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.CategoryID)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.CategoryID)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.SupplierID)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.SupplierID)
+
+                            </dd>
+
+                        </dl>
+                    </div>
+                </div>
+                </div>
+            <div class="col-lg-6">
+                <img src="@Model.Picture1" alt="" />
+                </div>
+            <p>
+                @Html.ActionLink("Edit", "UpdateBook", new { id = Model.ProductID , supp = Session["suppname"]}) |
+                @Html.ActionLink("Delete", "DeleteBook", new { id = Model.ProductID, supp = Session["suppname"] }) |
+                @Html.ActionLink("Back to List", "ListBooks",new { supp = Session["suppname"] })
+            </p>
+            </div>
+        
+    </section>
+</section>
+
+

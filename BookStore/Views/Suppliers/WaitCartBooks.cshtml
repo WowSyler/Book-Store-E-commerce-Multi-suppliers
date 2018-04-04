@@ -1,0 +1,70 @@
+﻿@model IEnumerable<BookStore.Models.OrderDetails>
+@{
+    ViewBag.Title = "Wait Cart Books";
+    Layout = "~/Views/Shared/_LSupp.cshtml";
+}
+
+
+
+
+<section id="main-content">
+    <section class="wrapper">
+        <div class="row mt">
+
+            <div class="col-lg-12">
+                <h2>List Books</h2>
+                <div class="form-panel">
+
+                    <table class="table">
+                        <tr>
+                            <th>
+                                Product ID
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Price)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Quantity)
+                            </th>
+                            <th>
+                                Total Price
+                            </th>
+                            <th>
+                                Add date cart
+                            </th>
+                            <th>
+                                Customers ID
+                            </th>
+
+                        </tr>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ProductID)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Price)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Quantity)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.TotalPrice)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.OrderDate)
+                                </td>   
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CustomersID)
+                                </td>                            
+                            </tr>
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LSupp.cshtml";
+}
+
+<h2>Index</h2>
+<section id="main-content">
+    <section class="wrapper">
+        <div class="row">
+            <div class="col-lg-12 main-chart">
+
+                <div class="row mt">                    
+                    <a href="@Url.Action("ListBooks", "Suppliers",new { supp = Session["suppname"] })">
+                        <div class="col-md-4 col-sm-4 mb">
+                            <div class="white-panel pn">
+                                <div class="white-header">
+                                    <h5>YOUR TOTAl BOOKS</h5>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-6 goleft">
+                                        <p> Book</p>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6"></div>
+                                </div>
+                                <div class="centered">
+                                    <h1 class="yazi"> @ViewBag.totalbooks </h1>
+                                    <h1 class="yazi">Books</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                            <div class="twitter-panel pn">
+                                <i class="fa fa-twitter fa-4x"></i>
+                                <p>Güncellemelerden haberden olmak ıcın bizi takip edin..</p>
+                                <p class="user">G&O Book Store</p>
+                            </div>
+                        </div>
+
+
+
+</div>
+
+
+                <div class="row">
+                    <a href="@Url.Action("SalesSup", "Sales",new { supp = Session["suppname"] })">
+                        <div class="col-md-4 col-sm-4 mb">
+                            <div class="white-panel pn grey-panel">
+                                <div class="white-header">
+                                    <h5>YOUR TOTAL Sale Books</h5>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-6 goleft">
+                                        <p> Sale</p>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6"></div>
+                                </div>
+                                <div class="centered">
+                                    <h1 class="yazi"> @ViewBag.totalsalebooks </h1>
+                                    <h1 class="yazi">Books</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                        <a href="@Url.Action("DetailSupp", "Suppliers",new { supp = Session["suppname"] })">
+                            <div class="col-md-4 col-sm-4 mb">
+                                <div class="darkblue-panel pn">
+                                    <div class="darkblue-header">
+                                        <h5 class="">Profil Detail</h5>
+                                    </div>
+                                    <h1 class="mt"><i class="fa fa-user fa-3x"></i></h1>
+
+                                    <footer>
+                                        <div class="centered">
+                                            <h5><i class="fa fa-trophy"></i> </h5>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                        </a>
+</div>
+          
+               
+                <div class="row">
+                    <a href="@Url.Action("WaitCartBooks", "Suppliers",new { supp = Session["suppname"] })">
+                        <div class="col-md-4 col-sm-4 mb">
+                            <div class="white-panel pn">
+                                <div class="white-header">
+                                    <h5>Waiting Cart Books</h5>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-6 goleft">
+                                        <p> Cart</p>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6"></div>
+                                </div>
+                                <div class="centered">
+                                    <h1 class="yazi">@ViewBag.addcardbooks </h1>
+                                    <h1 class="yazi">Books</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                        <div class="col-md-4 col-sm-4 mb">
+                            <div class="white-panel pn">
+                                <div class="white-header">
+                                    <h5>Waiting Sale Books</h5>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-6 goleft">
+                                        <p> Wait</p>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6"></div>
+                                </div>
+                                <div class="centered">
+                                    <h1 class="yazi">@ViewBag.waitbooks </h1>
+                                    <h1 class="yazi">Books</h1>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+</div>
+        </div>
+       
+      
+    </div>
+</section>
+</section>

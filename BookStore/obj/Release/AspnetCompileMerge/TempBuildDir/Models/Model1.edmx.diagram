@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="91455681a7b94e528ab380892ad5a6c7" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="bookStoreDBModel.Admin" Width="1.5" PointX="7.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookStoreDBModel.Categories" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookStoreDBModel.Comments" Width="1.5" PointX="2.875" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookStoreDBModel.Customers" Width="1.5" PointX="5" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookStoreDBModel.Order" Width="1.5" PointX="9.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookStoreDBModel.OrderDetails" Width="1.5" PointX="6.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookStoreDBModel.OrderProducts" Width="1.5" PointX="9.125" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookStoreDBModel.Payment" Width="1.5" PointX="11.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookStoreDBModel.Products" Width="1.5" PointX="2.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookStoreDBModel.Promo" Width="1.5" PointX="11.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookStoreDBModel.ShippingDetails" Width="1.5" PointX="11.625" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookStoreDBModel.Suppliers" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="bookStoreDBModel.FK_Products_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="bookStoreDBModel.FK_Comments_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="bookStoreDBModel.FK_Comments_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="bookStoreDBModel.FK_Order_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="bookStoreDBModel.FK_Order_Payment" ManuallyRouted="false" />
+        <AssociationConnector Association="bookStoreDBModel.FK_Order_ShippingDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="bookStoreDBModel.FK_OrderDetails_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="bookStoreDBModel.FK_OrderDetails_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="bookStoreDBModel.FK_Products_Suppliers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

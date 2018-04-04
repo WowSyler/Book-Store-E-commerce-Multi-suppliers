@@ -1,0 +1,186 @@
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\ApplicationInsights.config
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\csc.exe
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\csc.exe.config
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\csc.rsp
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\csi.exe
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\csi.rsp
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\System.AppContext.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\vbc.exe
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\vbc.exe.config
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\vbc.rsp
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\VBCSCompiler.exe
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\BookStore.dll.config
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\BookStore.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\BookStore.pdb
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Antlr3.Runtime.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\EntityFramework.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\EntityFramework.SqlServer.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.Web.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.ApplicationInsights.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Newtonsoft.Json.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\PagedList.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\PagedList.Mvc.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.Helpers.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.Mvc.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.Optimization.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.Razor.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.WebPages.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.WebPages.Razor.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\WebGrease.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\EntityFramework.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\EntityFramework.SqlServer.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\PagedList.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\PagedList.Mvc.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.Helpers.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.Mvc.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.Optimization.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.Razor.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.WebPages.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Antlr3.Runtime.pdb
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Newtonsoft.Json.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.Web.xml
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\tr\System.Web.Razor.resources.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\obj\Release\BookStore.csprojResolveAssemblyReference.cache
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\obj\Release\BookStore.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\obj\Release\BookStore.pdb
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Data.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Security.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.ApplicationServices.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.DynamicData.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.Entity.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.Extensions.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.Routing.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\System.Web.Services.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.ApplicationInsights.TraceListener.dll
+C:\Users\ozank\Desktop\BookStore Project\BookStore\BookStore\bin\Microsoft.ApplicationInsights.TraceListener.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\ApplicationInsights.config
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\csc.exe
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\csc.exe.config
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\csc.rsp
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\csi.exe
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\csi.rsp
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\System.AppContext.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\vbc.exe
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\vbc.exe.config
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\vbc.rsp
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\VBCSCompiler.exe
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\BookStore.dll.config
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\BookStore.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\BookStore.pdb
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Antlr3.Runtime.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\EntityFramework.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\EntityFramework.SqlServer.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.Web.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.ApplicationInsights.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.ApplicationInsights.TraceListener.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Newtonsoft.Json.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\PagedList.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\PagedList.Mvc.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Data.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Security.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.ApplicationServices.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.DynamicData.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.Entity.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.Extensions.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.Helpers.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.Mvc.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.Optimization.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.Razor.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.Routing.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.Services.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.WebPages.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.WebPages.Razor.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\WebGrease.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\EntityFramework.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\EntityFramework.SqlServer.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.ApplicationInsights.TraceListener.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\PagedList.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\PagedList.Mvc.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.Helpers.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.Mvc.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.Optimization.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.Razor.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.WebPages.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Antlr3.Runtime.pdb
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Newtonsoft.Json.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\Microsoft.AI.Web.xml
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\tr\System.Web.Razor.resources.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\obj\Release\BookStore.csprojResolveAssemblyReference.cache
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\obj\Release\BookStore.dll
+C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\obj\Release\BookStore.pdb

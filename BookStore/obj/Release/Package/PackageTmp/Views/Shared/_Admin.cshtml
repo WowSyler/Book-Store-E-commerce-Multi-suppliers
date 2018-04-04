@@ -1,0 +1,231 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">  var appInsights = window.appInsights || function (config) { function i(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = "AuthenticatedUserContext", h = "start", c = "stop", l = "Track", a = l + "Event", v = l + "Page", y = u.createElement(o), r, f; y.src = config.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js"; u.getElementsByTagName(o)[0].parentNode.appendChild(y); try { t.cookie = u.cookie } catch (p) { } for (t.queue = [], t.version = "1.0", r = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; r.length;)i("track" + r.pop()); return i("set" + s), i("clear" + s), i(h + a), i(c + a), i(h + v), i(c + v), i("flush"), config.disableExceptionTracking || (r = "onerror", i("_" + r), f = e[r], e[r] = function (config, i, u, e, o) { var s = f && f(config, i, u, e, o); return s !== !0 && t["_" + r](config, i, u, e, o), s }), t }({ instrumentationKey: "323d7e3a-08f8-4068-b166-519388942302" }); window.appInsights = appInsights; appInsights.trackPageView();</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>@ViewBag.Title - Admin Panel  - G&O Book Store</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--external css-->
+
+    <link href="~/Content/css/suppcss/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/suppcss/to-do.css" rel="stylesheet" />
+
+    <link href="~/Content/css/suppcss/table-responsive.css" rel="stylesheet" />
+    <link href="~/Content/css/suppcss/style-responsive.css" rel="stylesheet" />
+    <link href="~/fonts/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <link href="~/Content/css/suppcss/style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <section id="container">
+
+        <header class="header black-bg">
+            <div class="sidebar-toggle-box">
+                <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+            </div>
+            <!--logo start-->
+            <a href="@Url.Action("Home","Admin",new { Ladmin = Session["admin"] })" class="logo"><b>ADMİN PANEL   (@Session["admin"]) </b></a>
+            <!--logo end-->
+
+            <div class="top-menu">
+                <ul class="nav pull-right top-menu">
+                    @if (Session["admin"] == null)
+                    {
+
+                        <li><a class="logout" href="@Url.Action("Index", "Admin")">Login</a></li>
+                    }
+                    else
+                    {
+                        <li><a class="logout" href="@Url.Action("Logout", "Admin")">Logout</a></li>
+                    }
+                </ul>
+            </div>
+        </header>
+
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu" id="nav-accordion">
+
+                    <p class="centered"><a href="@Url.Action("Home","Admin",new { Ladmin = Session["admin"] })"><img src="~/Content/images/home/logo.png" class="img-circle" width="60"></a></p>
+                    <h5 class="centered">
+                        @Session["admin"]
+                    <br /> @ViewBag.Aname  @ViewBag.Asname
+                </h5>
+
+                <li class="mt">
+                    <a class="active" href="@Url.Action("Home","Admin",new { Ladmin = Session["admin"] })">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Dashboard</span>
+                    </a>
+
+
+                </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="fa fa-desktop"></i>
+                            <span>Admin</span>
+                        </a>
+                        <ul class="sub">                           
+                            <li><a href="@Url.Action("DetailAdmin","Admin",new { Ladmin = Session["admin"] })">Detail Admin info</a></li>
+                        </ul>
+                    </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-desktop"></i>
+                        <span>Suppliers</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="@Url.Action("ListSupp","Admin",new { Ladmin = Session["admin"] })">Suppliers List</a></li>
+                    
+                    </ul>
+                </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="fa fa-desktop"></i>
+                            <span>Customers</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="@Url.Action("ListCus","Admin",new { Ladmin = Session["admin"] })">Customer List</a></li>
+                            
+                        </ul>
+                    </li>
+
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-book"></i>
+                        <span>BOOKS</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="@Url.Action("ListBooks","AdminSite",new { Ladmin = Session["admin"] })">List All Books</a></li>
+
+                    </ul>
+                </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="fa fa-book"></i>
+                            <span>Validation</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="@Url.Action("ListValidBooks","AdminSite",new { Ladmin = Session["admin"] })">Books</a></li>
+                            <li><a href="@Url.Action("ListValidCommets","AdminSite",new { Ladmin = Session["admin"] })">Comments</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="fa fa-cogs"></i>
+                            <span>Settings</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="@Url.Action("Promo","AdminSite",new { Ladmin = Session["admin"] })">Promo</a></li>
+                            <li><a href="@Url.Action("CreatePromo","AdminSite",new { Ladmin = Session["admin"] })">Create Promo</a></li>
+                            <li><a href="@Url.Action("Categories","AdminSite",new { Ladmin = Session["admin"] })">Categories List</a></li>
+                            <li><a href="@Url.Action("CreateCata","AdminSite",new { Ladmin = Session["admin"] })">Create Categoriest</a></li>
+                        </ul>
+                    </li>
+            </ul>
+        </div>
+    </aside>
+    @RenderBody();
+
+    <footer class="site-footer">
+        <div class="text-center">
+            2017 - G&O Book Store  (ADMİN PANEL)
+            <a href="@Url.Action("Home","Admin",new { Ladmin = Session["admin"] })" class="go-top">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </div>
+    </footer>
+
+</section>
+
+
+
+<script type="text/javascript">
+        $(document).ready(function () {
+        var unique_id = $.gritter.add({
+            // (string | mandatory) the heading of the notification
+            title: 'Welcome to Dashgum!',
+            // (string | mandatory) the text inside the notification
+            text: 'Hover me to enable the Close Button. You can hide the left sidebar clicking on the button next to the logo. Free version for <a href="http://blacktie.co" target="_blank" style="color:#ffd777">BlackTie.co</a>.',
+            // (string | optional) the image to display on the left
+            image: 'assets/img/ui-sam.jpg',
+            // (bool | optional) if you want it to fade out on its own or just sit there
+            sticky: true,
+            // (int | optional) the time you want it to be alive for before fading out
+            time: '',
+            // (string | optional) the class name you want to apply to that specific message
+            class_name: 'my-sticky-class'
+        });
+
+        return false;
+        });
+</script>
+
+<script type="application/javascript">
+    $(document).ready(function () {
+        $("#date-popover").popover({html: true, trigger: "manual"});
+        $("#date-popover").hide();
+        $("#date-popover").click(function (e) {
+            $(this).hide();
+        });
+
+        $("#my-calendar").zabuto_calendar({
+            action: function () {
+                return myDateFunction(this.id, false);
+            },
+            action_nav: function () {
+                return myNavFunction(this.id);
+            },
+            ajax: {
+                url: "show_data.php?action=1",
+                modal: true
+            },
+            legend: [
+                {type: "text", label: "Special event", badge: "00"},
+                {type: "block", label: "Regular event", }
+            ]
+        });
+    });
+
+
+    function myNavFunction(id) {
+        $("#date-popover").hide();
+        var nav = $("#" + id).data("navigation");
+        var to = $("#" + id).data("to");
+        console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+    }
+</script>
+
+<script src="~/Content/css/suppjs/jquery.js"></script>
+<script src="~/Content/css/suppjs/jquery-1.8.3.min.js"></script>
+<script src="~/Content/css/suppjs/bootstrap.min.js"></script>
+<script src="~/Content/css/suppjs/jquery.dcjqaccordion.2.7.js"></script>
+<script src="~/Content/css/suppjs/jquery.scrollTo.min.js"></script>
+<script src="~/Content/css/suppjs/jquery.nicescroll.js"></script>
+<script src="~/Content/css/suppjs/jquery.sparkline.js"></script>
+<script src="~/Content/css/suppjs/common-scripts.js"></script>
+<script src="~/Content/css/suppjs/gritter-conf.js"></script>
+<script src="~/Content/css/suppjs/gritter/js/jquery.gritter.js"></script>
+<script src="~/Content/css/suppjs/sparkline-chart.js"></script>
+
+</body>
+</html>

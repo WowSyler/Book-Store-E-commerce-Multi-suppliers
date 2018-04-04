@@ -1,0 +1,130 @@
+﻿@model IEnumerable<BookStore.Models.OrderDetails>
+
+</br></br></br>
+@if (Model.Count() >0)
+{
+    <div class="table-responsive ">
+
+        <div class="container">
+            <div class="col-sm-11">
+                <table class="table">
+                    <tr>
+                        <th>
+                            <h4>Book Detail Click</h4>
+                        </th>
+                        <th>
+                            <h4>Book Name</h4>
+                        </th>
+                        <th>
+                            <h4>Unit Price</h4>
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Quantity)
+                        </th>
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.TotalPrice)
+                        </th>
+                        <th>
+                            Book Cart Delete
+                        </th>
+
+                        <th></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <table class="table">
+
+                        @foreach (var item in ViewBag.bname)
+                        {
+                            <tr>
+                                <td width="250" class="text-center"><a href="@Url.Action("Details","Products", new { id = @item.ProductID , bname = item.Name })"> <img src="@item.Picture1" alt="" class="imgdimension" /> </a></td>
+                               
+
+                            </tr>
+
+                        }
+                    </table>
+                </div>
+                <div class="col-sm-2">
+                    <table class="table">
+
+                      @foreach (var item in ViewBag.bname)
+                      {
+                            <tr>
+                                
+                            <td height="55" class="left text-center"><a href="@Url.Action("Details","Products", new { id = @item.ProductID , bname = item.Name })"> @item.Name </a> </td>
+                                
+                            </tr>
+
+                        }
+                    </table>
+                </div>
+                <div class="col-sm-7">
+                    <table class="table">
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td height="55">
+                                    @Html.DisplayFor(modelItem => item.Price) ₺
+                                </td>
+                                <td height="55">
+                                    @Html.DisplayFor(modelItem => item.Quantity)
+                                </td>
+
+                                <td height="55">
+                                    @Html.DisplayFor(modelItem => item.TotalPrice) ₺
+                                </td>
+
+                                <td height="55">
+                                    @Html.ActionLink("Delete", "Remove", new { id = item.ProductID, user = Session["username"] })
+                                </td>
+
+                            </tr>
+
+                        }
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <p class="text-center">
+                    <h3>Total Cart :@ViewBag.ccc ₺</h3>
+                    <div class="login-form">
+                        <a href=" @(Session["username"] != null ? Url.Action("Index", "Checkout", new { user = Session["UserName"] }) : Url.Action("Index", "Accounts")) " class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Check OUT</a>
+
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="container text-center">
+        <div class="row">
+            <div >
+                <p class="text-center">Please Add to Book Cart</p>
+<br>
+                <a href="@Url.Action("Index","Home")" class="center">Home Page</a>
+            </div>
+        </div>
+    </div>
+
+}
+
+</br></br>
+</br></br>
+@{
+    TempData["returnURLL"] = Request.RawUrl;
+}

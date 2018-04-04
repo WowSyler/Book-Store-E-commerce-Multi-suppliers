@@ -1,0 +1,113 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<BookStore.Models.Products>
+@{
+    ViewBag.Title = "Books Page";
+}
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="breadcrumbs">
+                <ol class="breadcrumb">
+                    <li><a href="@Url.Action("Index","Home")">Home</a></li>
+                    <li class="active">Books List</li>
+                </ol>
+            </div>
+            <div class="col-sm-3">
+                <div class="left-sidebar">
+
+                    <div class="categories">
+                        <h3 class="text-center">Category</h3>
+
+                        <!--category-productsr-->
+
+
+                        @foreach (var item in ViewBag.cata)
+                        { //catagori yazdırma
+
+                            <ul>
+
+                                <li><a href="@Url.Action("Catagori", "Products" ,new { catID = @item.CategoryID })"> @item.Name</a></li>
+                            </ul>
+
+                        }
+                        <!--/category-products-->
+
+                    </div>
+
+
+
+                    <div class="shipping text-center">
+                        <!--shipping-->
+                        <img src="~/Content/images/home/add.png" alt="" />
+                    </div><!--/shipping-->
+
+                </div>
+            </div>
+
+            <div class="col-sm-9 padding-right">
+                <div class="features_items">
+                    <!--features_items-->
+                    <h2 class="title text-center">Features Items</h2>
+
+
+                    @if (Model != null || Model.Count > 0)
+                    {
+                        foreach (var item in Model)
+                        {
+                            { Html.RenderPartial("_Products", item); }
+                        }
+                    }
+                    else
+                    {
+
+                        <text>Sorry! There is no Product available</text>
+                    }
+                   
+
+                
+                    </div><!--features_items-->
+
+                <div class=" pager">
+                    @Html.PagedListPager(Model, page1 => Url.Action("Index", "Products", new { page = page1 }), new PagedListRenderOptions { LinkToFirstPageFormat = "<< İlk", LinkToPreviousPageFormat = "< Önceki", LinkToNextPageFormat = "Sonraki >", LinkToLastPageFormat = "Son >>" })
+                </div>
+                <div class="recommended_items">
+                    <!--recommended_items-->
+                    <h2 class="title text-center">recommended items</h2>
+
+                    <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+
+                                @foreach (var item in (List<BookStore.Models.Products>)@ViewBag.rec)
+                                {
+                                    { Html.RenderPartial("_recommended", item); }
+                                }
+
+
+
+                            </div>
+                            <div class="item">
+
+                                @foreach (var item in (List<BookStore.Models.Products>)@ViewBag.rec2)
+                                {
+                                    { Html.RenderPartial("_recommended", item); }
+
+                                }
+
+                            </div>
+                        </div>
+                        <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div><!--/recommended_items-->
+
+            </div>
+        </div>
+    </div>
+</section>

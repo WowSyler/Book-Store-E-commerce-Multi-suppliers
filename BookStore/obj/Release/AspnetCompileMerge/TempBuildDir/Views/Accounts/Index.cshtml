@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Account Page";
+}
+
+
+<section id="form">
+    <!--form-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-1">
+                <div class="login-form">
+                    <!--login form-->
+                    <h2>Login to your account</h2>
+                    @using (Html.BeginForm("Index", "Accounts", FormMethod.Post, new { @class = "aa-login-form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again.")
+
+                        <label for="">Username<span>*</span></label>
+                        <input name="UserName" type="text" placeholder="Username">
+                        <label for="">Password<span>*</span></label>
+                        <input name="Password" type="password" placeholder="Password">
+                  
+                        <button type="submit" class="btn btn-default">Login</button>
+                    }
+                </div><!--/login form-->
+            </div>
+            <div class="col-sm-1">
+                <h2 class="or">OR</h2>
+            </div>
+            <div class="col-sm-4">
+                <div class="signup-form">
+                    <!--sign up form-->
+                    <h2>New User Signup!</h2>
+                    @using (Html.BeginForm("Register", "Accounts", FormMethod.Post, new { @class = "aa-login-form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+                                    <label for="">First Name<span>*</span></label>
+                                    <input name="FirstName" type="text" placeholder="Enter first name">
+
+                                    <label for="">Last Name<span>*</span></label>
+                                    <input name="LastName" type="text" placeholder="Enter last name">
+
+                                    <label for="">Username<span>*</span></label>
+                                    <input name="UserName" type="text" placeholder="Username">
+
+                                    <label for="">Password<span>*</span></label>
+                                    <input name="Password" type="password" placeholder="Password">
+
+                                    <label for="">Email<span>*</span></label>
+                                    <input name="Email" type="text" placeholder="Enter your email">
+
+                                    <label for="">Mobile Phone</label>
+                                    <input name="Phone" type="text" placeholder="Enter your Mobile Phonr Number">
+                                  
+
+                                    <button type="submit" class="aa-browse-btn">Register</button>
+                    }                  
+                </div><!--/sign up form-->
+               
+            </div>
+
+        </div>
+    </div>
+</section><!--/form-->

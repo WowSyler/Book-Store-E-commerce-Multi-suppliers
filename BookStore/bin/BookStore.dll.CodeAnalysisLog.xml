@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2017\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="15.0">
+ <Targets>
+  <Target Name="C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\bin\BookStore.dll">
+   <Modules>
+    <Module Name="bookstore.dll">
+     <Namespaces>
+      <Namespace Name="BookStore.Models">
+       <Types>
+        <Type Name="Categories" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\Models" File="Categories.cs" Line="18">'Categories.Categories()' sınıf tarafından tanımlanmış bir sanal yöntem çağırısına neden olan bir çağrı zinciri içeriyor. İstenmeyen sonuçlar için aşağıdaki çağrı yığınını gözden geçirin: &#xD;&#xA;&#xD;&#xA;Categories..ctor()&#xD;&#xA;Categories.set_Products(ICollection&lt;Products&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Products" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="Breaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Customers" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\Models" File="Customers.cs" Line="18">'Customers.Customers()' sınıf tarafından tanımlanmış bir sanal yöntem çağırısına neden olan bir çağrı zinciri içeriyor. İstenmeyen sonuçlar için aşağıdaki çağrı yığınını gözden geçirin: &#xD;&#xA;&#xD;&#xA;Customers..ctor()&#xD;&#xA;Customers.set_Comments(ICollection&lt;Comments&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\Models" File="Customers.cs" Line="18">'Customers.Customers()' sınıf tarafından tanımlanmış bir sanal yöntem çağırısına neden olan bir çağrı zinciri içeriyor. İstenmeyen sonuçlar için aşağıdaki çağrı yığınını gözden geçirin: &#xD;&#xA;&#xD;&#xA;Customers..ctor()&#xD;&#xA;Customers.set_Order(ICollection&lt;Order&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Comments" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="Breaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+          <Member Name="#Order" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="Breaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Order" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\Models" File="Order.cs" Line="18">'Order.Order()' sınıf tarafından tanımlanmış bir sanal yöntem çağırısına neden olan bir çağrı zinciri içeriyor. İstenmeyen sonuçlar için aşağıdaki çağrı yığınını gözden geçirin: &#xD;&#xA;&#xD;&#xA;Order..ctor()&#xD;&#xA;Order.set_OrderDetails(ICollection&lt;OrderDetails&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OrderDetails" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="Breaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Payment" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\Models" File="Payment.cs" Line="18">'Payment.Payment()' sınıf tarafından tanımlanmış bir sanal yöntem çağırısına neden olan bir çağrı zinciri içeriyor. İstenmeyen sonuçlar için aşağıdaki çağrı yığınını gözden geçirin: &#xD;&#xA;&#xD;&#xA;Payment..ctor()&#xD;&#xA;Payment.set_Order(ICollection&lt;Order&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Order" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="Breaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Products" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\Models" File="Products.cs" Line="18">'Products.Products()' sınıf tarafından tanımlanmış bir sanal yöntem çağırısına neden olan bir çağrı zinciri içeriyor. İstenmeyen sonuçlar için aşağıdaki çağrı yığınını gözden geçirin: &#xD;&#xA;&#xD;&#xA;Products..ctor()&#xD;&#xA;Products.set_Comments(ICollection&lt;Comments&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\Models" File="Products.cs" Line="18">'Products.Products()' sınıf tarafından tanımlanmış bir sanal yöntem çağırısına neden olan bir çağrı zinciri içeriyor. İstenmeyen sonuçlar için aşağıdaki çağrı yığınını gözden geçirin: &#xD;&#xA;&#xD;&#xA;Products..ctor()&#xD;&#xA;Products.set_OrderDetails(ICollection&lt;OrderDetails&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Comments" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="Breaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+          <Member Name="#OrderDetails" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="Breaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ShippingDetails" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\Models" File="ShippingDetails.cs" Line="18">'ShippingDetails.ShippingDetails()' sınıf tarafından tanımlanmış bir sanal yöntem çağırısına neden olan bir çağrı zinciri içeriyor. İstenmeyen sonuçlar için aşağıdaki çağrı yığınını gözden geçirin: &#xD;&#xA;&#xD;&#xA;ShippingDetails..ctor()&#xD;&#xA;ShippingDetails.set_Order(ICollection&lt;Order&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Order" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="Breaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Suppliers" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\ozank\Desktop\BookStore Project V 5.6.01\BookStore Project\BookStore\BookStore\Models" File="Suppliers.cs" Line="18">'Suppliers.Suppliers()' sınıf tarafından tanımlanmış bir sanal yöntem çağırısına neden olan bir çağrı zinciri içeriyor. İstenmeyen sonuçlar için aşağıdaki çağrı yığınını gözden geçirin: &#xD;&#xA;&#xD;&#xA;Suppliers..ctor()&#xD;&#xA;Suppliers.set_Products(ICollection&lt;Products&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Products" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="ExcludedInSource" Created="2018-04-04 15:44:16Z" FixCategory="Breaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+   <Name>Koleksiyon özellikleri salt okunur olmalıdır</Name>
+   <Description>Koleksiyon döndüren özellikler, kullanıcıların yedekleme deposunu tamamen değiştirememesi için salt okunur olmalıdır. Kullanıcılar ilgili yöntemleri çağırarak koleksiyonun içeriğini yine de değiştirebilir. XmlSerializer sınıfının salt okunur koleksiyonları seri halden çıkarmak için özel desteği olduğuna dikkat edin. Daha fazla bilgi için XmlSerializer genel bakışına bakın.</Description>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182327.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>Geçersiz kılınabilir yöntemleri oluşturucular içinde çağırmayın</Name>
+   <Description>Sınıf üzerinde tanımlanan sanal yöntemler oluşturuculardan çağırılmamalıdır. Eğer türetilmiş bir sınıf yöntemi geçersiz kılmışsa, türetilmiş sınıf sürümü çağırılır (türetilen sınıf oluşturucusu çağırılmadan önce).</Description>
+   <Resolution Name="Default">{0} sınıf tarafından tanımlanmış bir sanal yöntem çağırısına neden olan bir çağrı zinciri içeriyor. İstenmeyen sonuçlar için aşağıdaki çağrı yığınını gözden geçirin: {1}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="15.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Kategori</String>
+  <String Key="Certainty">Kesinlik</String>
+  <String Key="CollapseAll">Tümünü Daralt</String>
+  <String Key="CheckId">Kimliği Denetle</String>
+  <String Key="Error">Hata</String>
+  <String Key="Errors">hata(lar)</String>
+  <String Key="ExpandAll">Tümünü Genişlet</String>
+  <String Key="Help">Yardım</String>
+  <String Key="Line">Çizgi</String>
+  <String Key="Messages">ileti(ler)</String>
+  <String Key="LocationNotStoredInPdb">[Konum Pdb içinde saklanmıyorl]</String>
+  <String Key="Project">Proje</String>
+  <String Key="Resolution">Çözünürlük</String>
+  <String Key="Rule">Kural</String>
+  <String Key="RuleFile">Kural Dosyası</String>
+  <String Key="RuleDescription">Kural Açıklaması</String>
+  <String Key="Source">Kaynak</String>
+  <String Key="Status">Durum</String>
+  <String Key="Target">Hedef</String>
+  <String Key="Warning">Uyarı</String>
+  <String Key="Warnings">uyarı(lar)</String>
+  <String Key="ReportTitle">Kod Analizi Raporu</String>
+ </Localized>
+</FxCopReport>

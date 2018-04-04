@@ -1,0 +1,78 @@
+﻿@model BookStore.Models.Admin
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+
+    <title>Admin Panel</title>
+
+    <link href="~/Content/css/suppcss/bootstrap.css" rel="stylesheet" />
+
+    <link href="~/fonts/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/css/suppcss/style.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <link href="~/Content/css/suppcss/style-responsive.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div id="login-page">
+        <div class="container">
+
+            <div class="form-login" >
+                <h2 class="form-login-heading">Site Admin</h2>
+                <div class="login-wrap">
+@using (Html.BeginForm("Login", "Admin", FormMethod.Post, new { @id = "loginForm" }))
+{
+    @Html.ValidationSummary(true)
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    @Html.EditorFor(model => model.username, new { htmlAttributes = new { @class = "form-control", @name = "username", @placeholder = "Username" } })
+    @Html.ValidationMessageFor(model => model.username, "", new { @class = "text-danger " })
+            
+                    <br>
+    @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control", @name = "password", @type = "password", @placeholder = "Password" } })
+    @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                  
+
+
+                    <label class="checkbox">
+                        <span class="pull-right">
+                           
+
+                        </span>
+                    </label>
+                    <button class="btn btn-theme btn-block" type="submit"><i class="fa fa-lock"></i> LOGİN </button>
+                    
+}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+ 
+
+    <script src="~/Content/css/suppjs/jquery.js"></script>
+    <script src="~/Content/css/suppjs/bootstrap.min.js"></script>
+  
+    <script src="~/Content/css/suppjs/jquery.backstretch.min.js"></script>
+    <script>
+        $.backstretch("/Content/images/admin/login-bg.jpg", {speed: 500});
+    </script>
+
+</body>
+</html>

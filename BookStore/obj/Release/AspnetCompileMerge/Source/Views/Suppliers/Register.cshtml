@@ -1,0 +1,95 @@
+﻿@model BookStore.Models.Suppliers
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login-Supp</title>
+    @Styles.Render("~/Content/css/admincss")
+    <style>
+        .adminHeading {
+            font-size: 36px;
+            margin-left: 450px;
+            color: white;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        @using (Html.BeginForm("Register", "Suppliers", FormMethod.Post, new { @id = "loginForm" }))
+        {
+            @Html.ValidationSummary(true)
+            @Html.AntiForgeryToken()
+            <div class="row col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Suppliers  Register
+                    </div><br />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="panel-body">
+                        <div class="input-group">
+                            <span class="input-group-addon"></span>
+                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @name = "name", @placeholder = "Name" } })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger " })
+
+                        </div>
+                        <br />
+                        <div class="input-group">
+                            <span class="input-group-addon"></span>
+                            @Html.EditorFor(model => model.SurName, new { htmlAttributes = new { @class = "form-control", @name = "surname", @placeholder = "SurName" } })
+                            @Html.ValidationMessageFor(model => model.SurName, "", new { @class = "text-danger " })
+
+                        </div>
+                        <br />
+                        <div class="input-group">
+                            <span class="input-group-addon"></span>
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @name = "email", @placeholder = "Email" } })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger " })
+
+                        </div>
+                        <br />
+                        <div class="input-group">
+                            <span class="input-group-addon"></span>
+                            @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control", @name = "username", @placeholder = "Username" } })
+                            @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger " })
+
+                        </div>
+                        <br />
+                        <div class="input-group">
+                            <span class="input-group-addon"></span>
+                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @name = "password", @type = "password", @placeholder = "Password" } })
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+
+                        </div>
+                        <br />
+                        <div class="row">
+
+                            <div class="col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <div class="pull-right">
+                                        <button type="submit" id="btn-login" class="btn btn-success">Register Suppilers</button>
+
+                                    </div><br /> <br /><br />
+                                    <a class="right" href="@Url.Action("Index", "Home")"> G&O Home Page</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    @Scripts.Render("~/Content/js/adminjs")
+    <script src="~/Content/css/suppjs/jquery.js"></script>
+    <script src="~/Content/css/suppjs/bootstrap.min.js"></script>
+    <script src="~/Content/css/suppjs/jquery.backstretch.min.js"></script>
+    <script>
+        $.backstretch("/Content/images/admin/login-bg.jpg", {speed: 500});
+    </script>
+</body>
+</html>

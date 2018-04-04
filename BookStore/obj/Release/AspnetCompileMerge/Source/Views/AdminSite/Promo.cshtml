@@ -1,0 +1,100 @@
+﻿@model IEnumerable<BookStore.Models.Promo>
+
+@{
+    ViewBag.Title = "Promo";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<section id="main-content">
+    <section class="wrapper">
+        <div class="row mt">
+            <h2>PROMO </h2>   
+            İmportant : Only One " item active " tag use other "item".
+            <div class="col-lg-12">
+                <div class="form-panel">
+                    <table class="table">
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.h1)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.h11)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.h2)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.p)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.b)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.link)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.alt)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.item)
+                            </th>
+                            <th>
+                              Categori ID
+                            </th>
+                            <th></th>
+                        </tr>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.h1)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.h11)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.h2)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.p)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.b)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.link)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.alt)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.item)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.cid)
+                                 
+                                </td>
+                                <td>
+                                   
+                                    @Html.ActionLink("Delete", "DeletePromo", new { id = item.id, Ladmin = Session["admin"] })
+                                </td>
+                            </tr>
+                        }
+
+                    </table>
+                    
+                </div>
+                <div>
+                    @Html.ActionLink("Back to Home", "Home", "Admin", new { Ladmin = Session["admin"] })    |
+                    @Html.ActionLink("Create Promo", "CreatePromo", "AdminSite", new { Ladmin = Session["admin"] })
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+@{
+    TempData["promourl"] = Request.RawUrl;
+}

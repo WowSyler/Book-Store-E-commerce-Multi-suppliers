@@ -1,0 +1,59 @@
+﻿@model BookStore.Models.Admin
+
+@{
+    ViewBag.Title = "Detail Admin";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<section class="wrapper">
+    <section id="main-content">
+        <div class="row mt">
+            <div class="col-lg-12">
+                <div class="content-panel">
+                    
+                    <h4>Admin</h4>
+                    <hr />
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.username)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.username)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.password)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.password)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.name)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.name)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.surname)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.surname)
+                        </dd>
+
+                    </dl>
+                    
+                </div>
+                <div>
+                    @Html.ActionLink("Back to Home", "Home", new { Ladmin = Session["admin"] })
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</section>

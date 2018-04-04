@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">  var appInsights = window.appInsights || function (config) { function i(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = "AuthenticatedUserContext", h = "start", c = "stop", l = "Track", a = l + "Event", v = l + "Page", y = u.createElement(o), r, f; y.src = config.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js"; u.getElementsByTagName(o)[0].parentNode.appendChild(y); try { t.cookie = u.cookie } catch (p) { } for (t.queue = [], t.version = "1.0", r = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; r.length;)i("track" + r.pop()); return i("set" + s), i("clear" + s), i(h + a), i(c + a), i(h + v), i(c + v), i("flush"), config.disableExceptionTracking || (r = "onerror", i("_" + r), f = e[r], e[r] = function (config, i, u, e, o) { var s = f && f(config, i, u, e, o); return s !== !0 && t["_" + r](config, i, u, e, o), s }), t }({ instrumentationKey: "323d7e3a-08f8-4068-b166-519388942302" }); window.appInsights = appInsights; appInsights.trackPageView();</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="G&O BOOKS STORE">
+    <meta name="author" content="">
+
+    <title>@ViewBag.Title - Book Store </title>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Content/css/price-range.css" rel="stylesheet">
+    <link href="~/Content/css/prettyPhoto.css" rel="stylesheet" />
+    <link href="~/Content/css/animate.css" rel="stylesheet">
+    <link href="~/Content/css/main.css" rel="stylesheet">
+    <link href="~/Content/css/responsive.css" rel="stylesheet">
+    <link href="~/Content/PagedList.css" rel="stylesheet" />
+    <script src="~/Scripts/js/html5shiv.js"></script>
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+ 
+
+   
+    <link rel="icon" href="@Url.Content("~/Content/favicon.ico")" type="image/x-icon" />
+    
+    
+
+</head><!--/head-->
+<body >
+    
+
+    <header  id="header">
+        <!--header-->
+        <div class="header_top">
+            <!--header_top-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                       
+                            <ul class="nav nav-pills">
+                                <li><a href="#"><i class="fa fa-phone"></i> +90 546 88 82</a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i> info@gobookstore.com</a></li>
+                            </ul>
+                        
+                    </div>
+                    <div class="col-sm-4">
+
+                    </div>
+                </div>
+            </div>
+        </div><!--/header_top-->
+
+        <div class="header-middle">
+            <!--header-middle-->
+            <div class="container">
+                <div class="row">
+                    
+
+                    <div class="modal" id="kullanıcıLogin" >
+                        <div id="login-page">
+                            <div class="container">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2 class="form-login-heading text-center">User Login</h2>
+                            </div>
+
+                                    @using (Html.BeginForm("Index", "Accounts", FormMethod.Post, new { @class = "aa-login-form" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        @Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again.")
+
+                                        
+                                            <input class="form-control" name="UserName" type="text" placeholder="Username">
+                                           
+                                                        <input class="form-control" name="Password" type="password" placeholder="Password">
+                                                      
+
+                                                        <div class="modal-footer">
+                                                            <button type="submit" class="btn btn-default center-block">Login</button>
+                                                        </div>
+                                    }
+                              
+                            
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-sm-5">
+                        <div class="logo pull-left">
+                            <a href="@Url.Action("Index","Home")"><img src="~/Content/images/home/logo.png" alt="" /></a>
+                        </div>
+                     
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="shop-menu pull-right">
+                            <ul class="nav navbar-nav">
+                               @if (Session["username"]  != null)
+                               {
+                                <li><a href="@(Session["username"] != null ? Url.Action("Detail", "Accounts", new {user =Session["username"] }): Url.Action("Index", "Accounts"))"><i class="fa fa-user"> </i>My Account : @Session["username"]</a></li>
+                                <li><a href="@Url.Action("Index", "Cart", new { user = Session["username"] })"><i class="fa fa-shopping-cart"> </i> My Cart @if (@ViewBag.NoOfItem > 0) { <text>(@ViewBag.NoOfItem)</text> }</a></li>
+                                <li><a href="@(Session["username"] != null ? Url.Action("Index", "CheckOut", new { user = Session["username"] }) : Url.Action("Index", "Accounts"))"><i class="fa fa-dribbble"> </i> Checkout</a></li>
+                               }
+                                @if (Session["username"] == null)
+                                {
+                                   <li> <button id="myBtn" class="btn btn-default"><i class="fa fa-lock"> </i> Login </button></li>
+                                    <li><a href="@Url.Action("Index","Accounts")" > <i class="fa fa-lock"> </i>Signup</a></li>
+
+                                }
+                                else
+                                {
+                                    <li><a href="@Url.Action("Logout","Accounts")"> <i class="fa fa-lock"> </i>Logout</a></li>        
+                                }
+                            </ul>
+
+
+                          
+
+                           
+                           
+
+                            
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header-middle-->
+  
+            <div class="header_bottom">
+                <div >
+                    <div class="menu">
+                        <ul >
+                            <li> @Html.ActionLink("Home Page", "Index", "Home")  </li>
+                            <li>  @Html.ActionLink("All Books List", "Index", "Products" )  </li>
+                            <li> @Html.ActionLink("Contact", "Contact", "Home")  </li>
+                         
+                        </ul>
+                    </div>
+                </div>
+
+            <div >
+                <div class="search_box pull-right">
+                    @using (Html.BeginForm("Search", "Products", FormMethod.Get))
+                    {
+                        <input type="text" placeholder="Search" name="product" id="search" />
+                    }
+                </div>
+            </div>
+
+
+            
+            <div class="clear"></div>
+        </div><!--/header-bottom-->
+        
+         <div class="header-middle">
+            <!--header-middle-->
+            <div class="container">
+                <div class="row">
+                      
+                </div>
+            </div>
+        </div><!--/ Bosluk-->
+        
+</header><!--/header-->
+
+
+    @RenderBody()
+
+
+    <footer id="footer">
+        <!--Footer-->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="companyinfo">
+                            <h2><span>G&O </span>-BOOKS STORE</h2>
+                            <p>The book is everything</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        </div>
+                   
+
+                        <div class="col-sm-3">
+                            <div class="address ">
+                                <img src="~/Content/images/home/map.png" alt="" />
+                                <p>______   Everywhere in Turkey _____</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            
+                            <h2>Service</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="@Url.Action("Contact", "Home")">Contact Us</a></li>
+
+                            </ul>
+                                
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Suppliers</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                
+                                <li><a href="@Url.Action("LoginSupp", "Suppliers")">Login Supliers</a></li>
+                                <li><a href="@Url.Action("Register", "Suppliers")">Register Supliers</a></li>
+                               
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>About Shopper</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Company Information</a></li>
+                                <li><a href="#">Copyright</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <div class="single-widget">
+                            <h2>About G&O Books Store</h2>
+                            <form action="#" class="searchform">
+                                
+                                <p>Get the most recent updates from <br />our site and be updated your self...</p>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <p class="pull-left">Copyright © 2017 E-BookStore Inc. All rights reserved.</p>
+                    <p class="pull-right">Designed by <span>G&O</span></p>
+                </div>
+            </div>
+        </div>
+
+    </footer><!--/Footer-->
+
+
+    <script src="~/Scripts/js/jquery.js"></script>
+    <script src="~/Scripts/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/js/jquery.scrollUp.min.js"></script>
+    <script src="~/Scripts/js/price-range.js"></script>
+    <script src="~/Scripts/js/jquery.prettyPhoto.js"></script>
+    <script src="~/Scripts/js/main.js"></script>
+
+    <script>
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    
+</body>
+</html>

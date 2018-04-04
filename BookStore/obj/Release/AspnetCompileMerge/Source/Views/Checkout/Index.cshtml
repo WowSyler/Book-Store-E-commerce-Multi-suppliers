@@ -1,0 +1,151 @@
+﻿@{
+    ViewBag.Title = "Checkout Page";
+}
+
+@model IEnumerable<BookStore.Models.OrderDetails>
+
+
+
+<section id="do_action">
+    <div class="container">
+
+        <div class="row">
+@using (Html.BeginForm("PlaceOrder", "Checkout", FormMethod.Post, new {user = Session["username"] }))
+{
+
+            <div class="col-sm-6">
+                <h4 class="text-center"><span>Shipping Detail </span> </h4>
+                <div class="total_area">
+                    <ul>
+                      
+                        <li>Total <span id="totals" name="totals">@ViewBag.ccc ₺ </span> </li>
+                    
+                    </ul>
+                  
+                    <div >
+                        
+                            <h2 class="panel-title text-center">
+                               
+                                    Billing Details / Shippping Address
+                               
+                            </h2>
+                      
+                        <div >
+                            <div class="form-group" >
+                                
+                                    <div class="col-md-6">
+                                        <div >
+                                            <input name="FirstName" type="text" required placeholder="First Name*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div >
+                                            <input name="LastName" type="text" required placeholder="Last Name*">
+                                        </div>
+                                    </div>
+           
+                                    <div class="col-md-6">
+                                        <div >
+                                            <input name="Email" type="email" required placeholder="Email Address*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div >
+                                            <input name="Mobile" type="tel" required placeholder="Mobile*">
+                                        </div>
+                                    </div>
+                              
+                                
+                                    <div class="col-md-11">
+                                        <div >
+                                            <textarea name="Addres" cols="7" required rows="3" placeholder="Address*"></textarea>
+                                        </div>
+                                    </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        
+                                    </div>
+                                </div>
+                                
+                                    <div class="col-md-6">
+                                        <div >
+                                            <input name="City" type="text" placeholder="City / Town">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="aa-checkout-single-bill">
+                                            <input name="PostCode" type="text" placeholder="Postcode / ZIP">
+                                        </div>
+                                    </div>
+                                <br />
+                                <div class="col-md-6">
+                                    <select name="PayMethod">
+                                        <option value="Havale">Havale</option>
+                                    </select>
+                                </div>
+                                    <div class="col-md-6">
+                                        <select name="sesion" class="hidden">
+                                            <option value="@Session["UserName"]"> @Session["UserName"] </option>
+                                        </select>
+
+                                    </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+               
+                <button type="submit" class="btn btn-default">Check Out</button>
+                                                    
+            </div>
+
+            <div class="col-sm-6"> 
+                <h4 class="text-center">Order Summary</h4>
+                <table class="table table-responsive">
+
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Book Name</th>
+                            <th>Unit Price</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in ViewBag.bname)
+                        {
+
+                                <tr>
+                                    <td width="150"><a href="@Url.Action("Details","Products", new { id = @item.ProductID , bname = item.Name })"> <img src="@item.Picture1" alt="" class="imgdimension" /> </a></td>
+                                    <td>@item.Name <strong>   </strong></td>
+                                    <td>@item.Price ₺ <strong>   </strong></td>
+                                </tr>
+                            
+                        }
+                       
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Cart Total</th>
+                            <th>Quantity * = </th>
+                            <td>@ViewBag.ccc ₺</td>
+                        </tr>
+                        
+                    </tfoot>
+                </table>
+            
+                
+ 
+</div>
+           
+}
+        </div>
+    </div>
+
+</section><!--/#do_action-->
